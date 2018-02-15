@@ -1,0 +1,344 @@
+body {
+    z-index: 2;
+    position: relative;
+}
+
+#content {
+    width: 100%;
+}
+
+#info-box {
+    border: 1px solid black;
+    width: auto;
+    position: absolute;
+    opacity: 0.9;
+    z-index: 1;
+    background-color: #AB9100;
+}
+
+#top-menu {
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 80px;
+}
+
+#left-screen {
+    border-right: 1px solid black;
+    width: 15%;
+    height: 760px;
+    
+}
+
+#mid-screen {
+    width: 70%;
+}
+
+#right-screen {
+    border-left: 1px solid black;
+    width: 15%;
+}
+
+#bottom-menu {
+    border-top: 1px solid black;
+    width: 100%;
+}
+
+
+
+.menu-button {
+    border: 1px solid black;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 60px;
+    margin-left: 280px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.placeholder1 {
+    width: 280px;
+}
+
+.placeholder2 {
+    width: 20px;
+}
+
+#ressources {
+    width: 100%;
+}
+
+.resCell {
+    border: 1px solid black;
+    width: 33%;
+}
+
+#city-grid {
+    width: 80%;
+    margin-left: 120px;
+}
+
+.city-grid-cell {
+    border: 1px solid black;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+#world-grid {
+    width: 80%;
+    margin-left: 120px;
+}
+
+.world-grid-cell {
+    border: 1px solid black;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+#fightInfo {
+    border: 1px solid black;
+    width: 400px;
+    
+    z-index: 1;
+    position: absolute;
+    margin-top: -730px;
+    margin-left: 430px;
+    background-color: #AB9100;
+    padding: 10px;
+}
+
+.fightInfo td {
+    border: 1px solid black;
+    width: 25%;
+}
+
+#fight-screen {
+    width: 100%;
+    height: 800px;
+    border: 1px solid black;
+}
+
+.fighter-screen-cell {
+    width: 25%;
+}
+
+#your-hp1 {
+    width: 100%;
+    background-color: green;
+}
+
+#your-hpBar1 {
+    width: 0%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+#your-atk1 {
+    width: 100%;
+}
+
+#your-atkBar1 {
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: green;
+    text-align: center;
+}
+
+#enemy-hp1 {
+    width: 100%;
+}
+
+#enemy-hpBar1 {
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: green;
+    text-align: center;
+}
+
+#enemy-atk1 {
+    width: 100%;
+    background-color: green;
+}
+
+#enemy-atkBar1 {
+    width: 0%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+#fighter {
+    width: 100%;
+}
+
+.fighter-cell {
+    border: 1px solid black;
+    width: 33%;
+}
+
+#afterFightLose {
+    border: 1px solid black;
+    width: 400px;
+    
+    z-index: 1;
+    position: absolute;
+    margin-top: -730px;
+    margin-left: 430px;
+    background-color: #AB9100;
+    padding: 10px;
+}
+
+#afterFightWin {
+    border: 1px solid black;
+    width: 400px;
+    
+    z-index: 1;
+    position: absolute;
+    margin-top: -730px;
+    margin-left: 430px;
+    background-color: #AB9100;
+    padding: 10px;
+}
+
+.troop-cell {
+    border: 1px solid black;
+    width: 50%;
+    height: 30px;
+}
+
+#barracks {
+    width: 100%;
+}
+
+.barracks-cell {
+    border: 1px solid black;
+    width: 20%;
+    height: 50px;
+    text-align: center;
+}
+
+.recruit-button {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 150px;
+    margin-left: 15%;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+#recruit-bar {
+    width: 0%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: green;
+    
+}
+
+#create-troop {
+    width: 100%;
+}
+
+.built-troop-button {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 150px;
+    margin-left: 43.5%;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+
+
+#create-troopDropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#create-troop-dropbtn {
+    min-width: 117px;
+    border: none;
+    text-align: center;
+}
+
+#create-troopDropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 117px;
+    z-index: 1;
+}
+
+#create-troopDropdown-content div {
+    color: black;
+    padding: 10px 14px;
+    display: block;
+    background-color: darkgrey;
+    text-align: center;
+}
+
+#create-troopDropdown-content div:hover {background-color: #ddd}
+
+#create-troopDropdown:hover #create-troopDropdown-content {
+    display: block;
+    cursor: pointer;
+}
+
+.slidecontainer {
+    width: 100%;
+}
+
+#to-fighter {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+#to-troops {
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+
+#forge {
+    width: 100%;
+}
+
+.forge-cell {
+    border: 1px solid black;
+    width: 20%;
+    height: 50px;
+    text-align: center;
+}
+
+.craft-button {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 50px;
+    margin: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+#woodsword-bar {
+    width: 0%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: green;
+    
+}
+
+.pickUp-button {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100px;
+    cursor: pointer;
+}
